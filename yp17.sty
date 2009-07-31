@@ -1,0 +1,223 @@
+%%
+%% This is file `yp17.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% yp17.dtx  (with options: `package')
+%% 
+%% This is a generated file.
+%% 
+%% Copyright (c) 2009 by HCSSiM, 2009
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either
+%% version 1.2 of this license or (at your option) any later
+%% version. The latest version of this license is in:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of
+%% LaTeX version 1999/12/01 or later.
+%% 
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesPackage{yp17}
+   [2009/07/26 v0.5.2 yp17]
+\usepackage{amsmath,amssymb,amsthm,ifthen,color,fancyhdr,wrapfig,ulem,tocloft,textcomp,fullpage}
+\usepackage[pdftex]{graphicx}
+\usepackage[final]{pdfpages}
+\newcommand{\yp}[1][1.5ex]{\includegraphics[height=#1]{yp4.pdf}}
+\newcommand{\HCSSiM}[1][1.5ex]{\includegraphics[height=#1]{logo.pdf}}
+\newcommand{\tealpig}[1][1.5ex]{\includegraphics[height=#1]{contradiction.pdf}}
+\renewcommand{\labelitemi}{\includegraphics[height=1.3ex]{yp4.pdf}}
+\newcommand{\misspelled}[1]{
+\ifthenelse{\equal{#1}{isomorphism}}{eyesowmoarfizzumn}{
+ \ifthenelse{\equal{#1}{isomorphic}}{eyesowmoarfick}{
+  \ifthenelse{\equal{#1}{camp}}{program}{#1}{
+   \ifthenelse{\equal{#1}{epic}}{epikcqx}{#1}}}}}
+\providecommand{\ZZ}{\ensuremath{\mathbb{Z}}}
+\providecommand{\QQ}{\ensuremath{\mathbb{Q}}}
+\providecommand{\RR}{\ensuremath{\mathbb{R}}}
+\providecommand{\CC}{\ensuremath{\mathbb{C}}}
+\newcount\randomi
+\global\randomi\catcode`\@
+\catcode`\@=11
+\def\nextrandom{\begingroup
+ \ifnum\randomi<\@ne
+   \global\randomi\time
+   \global\multiply\randomi23 \global\advance\randomi\year
+   \global\multiply\randomi31 \global\advance\randomi\day
+   \global\multiply\randomi54 \global\advance\randomi\month
+   \global\multiply\randomi21 \global\advance\randomi\time
+   \message{Randomizer initialized to \the\randomi.}
+   \nextrandom \nextrandom \nextrandom
+ \fi
+ \count@ii\randomi
+ \divide\count@ii 127773
+ \count@\count@ii
+ \multiply\count@ii 127773
+ \global\advance\randomi-\count@ii
+ \global\multiply\randomi 16807
+ \multiply\count@ 2836
+ \global\advance\randomi-\count@
+ \ifnum\randomi<\z@ \global\advance\randomi 2147483647\relax\fi
+ \endgroup}
+\countdef\count@ii=2
+\ifx\@tempcnta\undefined \csname newcount\endcsname \@tempcnta \fi
+\ifx\@tempcntb\undefined \csname newcount\endcsname \@tempcntb \fi
+\def\setrannum#1#2#3{
+ \@tempcnta#3\advance\@tempcnta-#2\advance\@tempcnta\@ne
+ \@tempcntb 2147483645
+ \divide\@tempcntb\@tempcnta
+ \getr@nval
+ \advance\ranval#2\relax
+ #1\ranval}
+\def\setrandim#1#2#3{
+ \dimen@#2\dimen@ii#3\relax
+ \setrannum\ranval\dimen@\dimen@ii
+ #1\ranval sp\relax}
+\def\getr@nval{
+ \nextrandom
+ \ranval\randomi \advance\ranval\m@ne \divide\ranval\@tempcntb
+ \ifnum\ranval<\@tempcnta\else \expandafter\getr@nval \fi}
+\def\pointless{\expandafter\PoinTless\the}
+{\catcode`p=12 \catcode`t=12
+\gdef\PoinTless#1pt{#1}}
+\catcode`\@=\randomi
+\global\randomi=0
+\newcount\ranval
+\newcommand{\yp@sevfact}[1]{%
+\ifcase#1%
+17 is the only prime that is the sum of four consecutive primes. \or
+In Apple's OS X Tiger, iCal's default date is July 17. \or
+The 17-year cicada, \textit{Magicicada Cassini}, has 17 letters in its Latin name. \or
+There are 17 distinct wallpaper groups. \or
+The record for longest time spent sitting in a tub of ketchup is 17 hours. \or
+The white house has 17 bathrooms. \or
+There are 17 species of penguins, and among penguins, the divorce rate is 17\%. \or
+The average giraffe's tongue is 17 inches long. \or
+There are 17 muscles in a horse's ear. \or
+Haikus have 17 syllables. \or
+There are 17 non-abelian groups of order less than 17. \or
+The Parthenon is 17 columns long. \or
+Shakespeare wrote 17 comedies. Hamlet reigned king for 17 years. \or
+The number of the beast can be written as the sum of the squares of the primes less than or equal to 17. \or
+Before the Spirit of St. Louis, there were 17 failed balloon crossings of the Atlantic. \or
+17 feet is the record for largest pie diameter, longest beard, and tallest sunflower. \or
+A hypercube must be cut along 17 faces to unfold into a three-dimensional cross. \or
+The mummy of King Tutankhamen was wrapped in 17 sheets. \or
+The Chinese had a bureaucratic constitution with 17 articles. \or
+Hamlet reigned for 17 years. \or
+Beethoven wrote 17 string quartets. \or
+The first performance of Handel's Water Music took place on Yellow Pigs Day, 1717. \or
+There are 17 muscles in the tongue. \or
+Gauss started his journal with ``We discovered that a circle is geometrically divisible into 17 parts.'' \or
+There are 17 miles of corridors in the Pentagon. \or
+Shakespeare wrote his last 17 plays in the 17th century. \or
+Ignoring order, there are 17 ways to completely surround a point with regular polygons. \or
+There are 17 partitions of 17 into primes. \or
+A square-root spiral uses the number $\sqrt{1}$ through $\sqrt{17}$ before it gets $360^\circ$ around the origin. \or
+A limerick has 34 syllables. \or
+There are 17 surfaces generated by degree 2 polynomials in 3 variables. \or
+Euler was blind for the last 17 years of his life.  \or
+$17^4=83521$ includes all one-digit Fibonacci numbers. \or
+$17^3=4913=(4+9+1+3)^3$. \or
+$\sqrt[17]{17}=1.18$ and $\sqrt[18]{18}=1.17$. \or
+Every sequence of fewer than 17 consecutive integers has an integer relatively prime to all the others. \or
+There are 17 words with the letters ``p,'' ``r,'' ``i,'' ``m,'' and ``e'' in that order. \or
+$K_{17}$ is the smallest $K_n$ which cannot be colored with three colors without a monochromatic triangle. \or
+There have been 17 perfectly pitched baseball games. \or
+There are 17 presidents without middle names. \or
+There are 17 non-planar pentominoes. \or
+Columbus's second expedition had 17 ships. \or
+There are 17 sounds in English represented by ``o.'' \or
+The eccentricity of Earth's orbit is 0.0017. \or
+Kempe's false proof of the four color theorem was published on July 17, 1879. \or
+Sarah Palin quit the governorship of Alaska 17 months early. \or
+Sonia Sotomayor was a federal judge for 17 years before being nominated to the Supreme Court. \or
+There are almost 17 ounces in a pound. \or
+17 is the only prime divisible by 17. \or
+In base 17, $17^{17}$ has 17 zeroes. \or
+When Einstein was 17 years old, he had 17 candles on his cake. \or
+A map of the original 13 colonies cannot be properly colored with 17 colors.  \or
+17 is a real prime in the Eisenstein integers. \or
+17 is the first number which is not the sum of at most 4 tetrahedral numbers. \or
+There are 17 integers which cannot be expressed as the sum of 17 or fewer cubes. \fi}
+\newcount\numberoffacts
+\numberoffacts=53
+\newcount\minusnof
+\minusnof=-53
+\newcount\incsize
+\incsize=52
+\newcount\seed
+\setrannum{\seed}{1}{\numberoffacts}
+\newcount\seedb
+\setrannum{\seedb}{1}{\numberoffacts}
+\newcount\increm
+\setrannum{\increm}{1}{\incsize}
+\newcount\incremb
+\setrannum{\incremb}{1}{\incsize}
+\newcommand{\seventeen}{%
+\global\advance\seed\increm%
+\whiledo{\seed>\numberoffacts \OR \seed=\numberoffacts}{\global\advance\seed\minusnof}%
+\yp@sevfact{\seed}}
+\fancypagestyle{ypfacts2}{
+\lhead{}
+\chead{}
+\rhead{}
+\fancyfoot[ro,le]{\small\thepage\hspace{1em}}
+\cfoot{}
+\fancyfoot[lo,re]{\multiply\incremb\pageten%
+\advance\seedb\incremb%
+\whiledo{\seedb>\numberoffacts \OR \seedb=\numberoffacts}{\advance\seedb\minusnof}%
+\small\yp@sevfact{\seedb}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.25pt}}
+\fancypagestyle{ypfacts}{
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\small\thepage\hspace{1em}}
+\cfoot{}
+\rfoot{\multiply\incremb\pageten%
+\advance\seedb\incremb%
+\whiledo{\seedb>\numberoffacts \OR \seedb=\numberoffacts}{\advance\seedb\minusnof}%
+\small\yp@sevfact{\seedb}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.25pt}}
+\def\basese#1{\ifcase\numexpr(#1)\relax
+0\or1\or2\or3\or4\or5\or6\or7\or8\or9\or A\or B \or C\or D\or E\or F\or G\else
+\expandafter\basese\expandafter{\number\numexpr((#1)-8)/17}\expandafter\basese\expandafter{\number\numexpr(#1)-((#1)-8)/17*17}\fi}
+\newcommand{\basexvii}[1]{\ensuremath{\mathrm{\basese{#1}}}}
+\renewcommand\labelenumi{\basexvii{\arabic{enumi}}.}
+\renewcommand\labelenumii{\basexvii{\arabic{enumii}}.}
+\renewcommand\labelenumiii{\basexvii{\arabic{enumiii}}.}
+\renewcommand\labelenumiv{\basexvii{\arabic{enumiv}}.}
+\renewcommand\thesection{\boldmath{\basexvii{\arabic{section}}}}
+\renewcommand\thesubsection{\boldmath{\thesection.\basexvii{\arabic{subsection}}}}
+\renewcommand\thesubsubsection{\boldmath{\thesubsection.\basexvii{\arabic{subsubsection}}}}
+\renewcommand\thesubparagraph{\boldmath{\basexvii{\arabic{subparagraph}}}}
+\renewcommand\theparagraph{\boldmath{\basexvii{\arabic{paragraph}}}}
+\renewcommand\thepart{\boldmath{\basexvii{\arabic{part}}}}
+\renewcommand\theequation{\basexvii{\arabic{equation}}}
+\renewcommand\thefigure{\basexvii{\arabic{figure}}}
+\renewcommand\thetable{\basexvii{\arabic{table}}}
+\renewcommand\thempfootnote{\basexvii{\arabic{mpfootnote}}}
+\renewcommand\thepage{\basexvii{\arabic{page}}}
+\newcommand\pageten{\arabic{page}}
+\renewcommand\thefootnote{\basexvii{\arabic{footnote}}}
+\def\addcontentsline#1#2#3{
+\addtocontents{#1}{\protect\contentsline{#2}{#3}{\boldmath{\thepage}}}}
+\newcommand{\erdos}{Erd\H{o}s}
+\newcommand{\godel}{G\"{o}del}
+\newcommand{\mobius}{M\"{o}bius}
+\newcommand{\stiri}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\stirii}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
+\newcommand{\newoddpage}{\ifthenelse{\isodd{\pageten}}%
+  {\newpage\ \thispagestyle{empty}\newpage}%
+  {\newpage}}%
+\newcommand{\newevenpage}{\ifthenelse{\isodd{\pageten}}%
+  {\newpage}%
+  {\newpage\ \thispagestyle{empty}\newpage}}%
+\endinput
+%%
+%% End of file `yp17.sty'.
