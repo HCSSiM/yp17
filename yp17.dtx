@@ -52,6 +52,7 @@
 % \changes{v0.5.0}{2009/07/24}{Initial pre-release}
 % \changes{v0.5.1}{2009/07/26}{Added 2-sided style, fixed ZZ, etc.}
 % \changes{v0.5.2}{2009/07/27}{Added Stirling numbers, newoddpage, and some small fixes.}
+% \changes{v0.5.3}{2009/08/02}{Added Poincar\'e}
 %
 % \GetFileInfo{yp17.sty}
 %
@@ -98,8 +99,9 @@
 % \DescribeMacro{\erdos}
 % \DescribeMacro{\godel}
 % \DescribeMacro{\mobius}
+% \DescribeMacro{\poincare}
 %
-% The commands |\erdos|, |\godel|, and |\mobius| spell Erd\H{o}s, G\"{o}del, and M\"{o}bius's names correctly.  Like |\misspelled|, they must be used with a forced space after.  For possessives, no space is necessary, though a normal space may be included without effect (i.e., ``|\erdos's|'' or ``|\erdos 's|'').
+% The commands |\erdos|, |\godel|, |\poincare|, and |\mobius| spell Erd\H{o}s, G\"{o}del, Poincar\'{e} and M\"{o}bius's names correctly.  Like |\misspelled|, they must be used with a forced space after.  For possessives, no space is necessary, though a normal space may be included without effect (i.e., ``|\erdos's|'' or ``|\erdos 's|'').
 %
 % \DescribeMacro{\stiri}
 % \DescribeMacro{\stirii}
@@ -386,12 +388,15 @@ There are 17 integers which cannot be expressed as the sum of 17 or fewer cubes.
 % \begin{macro}{\erdos}
 % \begin{macro}{\godel}
 % \begin{macro}{\mobius}
+% \begin{macro}{\poincare}
 % Finally, a few simple |\newcommand|s spell names right.
 %    \begin{macrocode}
 \newcommand{\erdos}{Erd\H{o}s}
 \newcommand{\godel}{G\"{o}del}
 \newcommand{\mobius}{M\"{o}bius}
+\newcommand{\poincare}{Poincar\'{e}}
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 % \end{macro}
 % \end{macro}
